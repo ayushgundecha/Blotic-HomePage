@@ -79,27 +79,28 @@ const FeedbackSlider = () => {
     }}
   >
     {feedbacks.map((feedback) => (
-      <SwiperSlide key={feedback.id}>
-        <div className="max-w-lg mx-auto pb-20">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden h-72 transform hover:scale-105 transition duration-500">
-            <div className="px-6 py-8 sm:p-10">
-              <div className="flex items-center">
-                <img
-                  src={feedback.avatar}
-                  alt="Avatar"
-                  className="h-16 w-16 rounded-full mr-4 border-4 border-white shadow-md"
-                />
-                <div>
-                  <h4 className="text-2xl font-semibold text-gray-800 mb-2">
-                    {feedback.name}
-                  </h4>
-                  <p className="text-gray-600 text-lg">{feedback.feedback}</p>
-                </div>
-              </div>
-            </div>
+      <SwiperSlide key={feedback.id} className="p-4">
+  <div className="max-w-lg mx-auto pb-8">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-72 transform hover:scale-105 transition duration-500">
+      <div className="px-6 py-8 sm:p-10">
+        <div className="flex items-center">
+          <img
+            src={feedback.avatar}
+            alt="Avatar"
+            className="h-16 w-16 rounded-full mr-4 border-4 border-white shadow-md"
+          />
+          <div>
+            <h4 className="text-2xl font-semibold text-gray-800 mb-2">
+              {feedback.name}
+            </h4>
+            <p className="text-gray-600 text-lg">{feedback.feedback}</p>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
+    </div>
+  </div>
+</SwiperSlide>
+
     ))}
   </Swiper>
   
