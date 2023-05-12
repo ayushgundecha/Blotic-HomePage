@@ -7,8 +7,8 @@ import FeedbackSlider from "../../components/feedbackSlider/feedbackslider.compo
 
 const Home=() => {
     return(
-        <div>
-        <div class="flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-white to-blue-100 min-h-screen">
+        <div className="bg-gradient-to-r from-white to-blue-100  ">
+        <div class="flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-white to-blue-100 min-h-screeny">
         <div class="w-full md:w-3/4 md:content md:pl-12">
           <h1 class="h-52 md:h-auto font-bold mb-6 not-italic text-5xl md:text-6xl leading-16 md:leading-20 text-center md:text-left ">
             ENTRY GATEWAY FOR ANY WEB3 <span class="text-blue-500">ENTHUSIAST</span>
@@ -21,7 +21,7 @@ const Home=() => {
           </div>
         </div>
       
-        <div class="w-full md:w-auto md:ml-6 transform hover:-rotate-12">
+        <div class="w-full md:w-auto md:ml-6 ">
           <img src={logo} class="App-logo mx-auto md:mx-0" alt="logo" />
         </div>
       </div>
