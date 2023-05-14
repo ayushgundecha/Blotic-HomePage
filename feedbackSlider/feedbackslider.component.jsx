@@ -80,8 +80,8 @@ const FeedbackSlider = () => {
   >
     {feedbacks.map((feedback) => (
       <SwiperSlide key={feedback.id} className="p-4">
-  <div className="max-w-lg mx-auto pb-8">
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-72 transform hover:scale-105 transition duration-500">
+  <div className="max-w-lg mx-auto pb-8 pr-4 pl-4">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-72 transform hover:scale-105 transition duration-500 mb-10">
       <div className="px-6 py-8 sm:p-10">
         <div className="flex items-center">
           <img
